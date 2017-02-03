@@ -5,6 +5,28 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HistoricPhotoStore", "HistoricPhotoStore\HistoricPhotoStore.csproj", "{97565666-45C0-4FCC-965C-111AD2342F41}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HistoricPhotoStore.Tests", "HistoricPhotoStore.Tests\HistoricPhotoStore.Tests.csproj", "{A5500DDF-7D51-4A88-9839-570D92D836E6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{97565666-45C0-4FCC-965C-111AD2342F41} = {97565666-45C0-4FCC-965C-111AD2342F41}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HistoricPhotoStore.Data", "HistoricPhotoStore.Data\HistoricPhotoStore.Data.csproj", "{FDBDB004-91E6-406A-8D34-9219DDAC61BF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{97565666-45C0-4FCC-965C-111AD2342F41} = {97565666-45C0-4FCC-965C-111AD2342F41}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HistoricPhotoStore.Presentation", "HistoricPhotoStore.Presentation\HistoricPhotoStore.Presentation.csproj", "{914239EA-E66C-4745-9CAB-957B92AC0FC5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FDBDB004-91E6-406A-8D34-9219DDAC61BF} = {FDBDB004-91E6-406A-8D34-9219DDAC61BF}
+		{97565666-45C0-4FCC-965C-111AD2342F41} = {97565666-45C0-4FCC-965C-111AD2342F41}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HistoricPhotoStore.Presentation.Tests", "HistoricPhotoStore.Presentation.Tests\HistoricPhotoStore.Presentation.Tests.csproj", "{3D4EDB1B-90BC-4981-9F39-53BFF1C1FB98}"
+	ProjectSection(ProjectDependencies) = postProject
+		{97565666-45C0-4FCC-965C-111AD2342F41} = {97565666-45C0-4FCC-965C-111AD2342F41}
+		{914239EA-E66C-4745-9CAB-957B92AC0FC5} = {914239EA-E66C-4745-9CAB-957B92AC0FC5}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +37,22 @@ Global
 		{97565666-45C0-4FCC-965C-111AD2342F41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97565666-45C0-4FCC-965C-111AD2342F41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97565666-45C0-4FCC-965C-111AD2342F41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5500DDF-7D51-4A88-9839-570D92D836E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5500DDF-7D51-4A88-9839-570D92D836E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5500DDF-7D51-4A88-9839-570D92D836E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5500DDF-7D51-4A88-9839-570D92D836E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDBDB004-91E6-406A-8D34-9219DDAC61BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDBDB004-91E6-406A-8D34-9219DDAC61BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDBDB004-91E6-406A-8D34-9219DDAC61BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDBDB004-91E6-406A-8D34-9219DDAC61BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{914239EA-E66C-4745-9CAB-957B92AC0FC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{914239EA-E66C-4745-9CAB-957B92AC0FC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{914239EA-E66C-4745-9CAB-957B92AC0FC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{914239EA-E66C-4745-9CAB-957B92AC0FC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D4EDB1B-90BC-4981-9F39-53BFF1C1FB98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D4EDB1B-90BC-4981-9F39-53BFF1C1FB98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D4EDB1B-90BC-4981-9F39-53BFF1C1FB98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D4EDB1B-90BC-4981-9F39-53BFF1C1FB98}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
