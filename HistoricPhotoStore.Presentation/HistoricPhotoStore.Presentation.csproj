@@ -138,6 +138,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="Images\B8078AE5-82E7-4831-AF03-264BEAE3D075.jpg" />
+    <Content Include="Images\A4843E01-2BC9-45CE-978C-58C7689FA6E8.jpg" />
+    <Content Include="Images\92159CE3-8D1A-4DD6-AE39-8993599199D5.jpg" />
+    <Content Include="Images\372E7E76-6497-4761-96EF-ACF93C61F967.jpg" />
+    <Content Include="Images\8BD8935B-457D-4BB3-81AE-C0DC70A84E75.jpg" />
+    <Content Include="Images\97E4643E-56F6-4CC3-AA7D-D75433D2D2BD.jpg" />
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Web.config" />
@@ -160,6 +166,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Images\_" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
