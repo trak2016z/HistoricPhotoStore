@@ -13,7 +13,7 @@ namespace HistoricPhotoStore.Tests
         public void ReturnsAllImagesReturnedByDataStorage()
         {
             var dataStorage = new Mock<DataStorage>();
-            var service = new HistoricPhotoStoreService(dataStorage.Object);
+            var service = new DefaultHistoricPhotoStoreService(dataStorage.Object);
 
             var guid1 = Guid.NewGuid();
             var guid2 = Guid.NewGuid();

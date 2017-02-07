@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HistoricPhotoStore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,10 +9,19 @@ namespace HistoricPhotoStore.Presentation.Controllers
 {
     public class HomeController : Controller
     {
-        // GET: Home
-        public ActionResult Index()
+
+        private readonly HistoricPhotoStoreService historicPhotoStoreService;
+
+        public HomeController(HistoricPhotoStoreService historicPhotoStoreService)
         {
-            return View();
+            this.historicPhotoStoreService = historicPhotoStoreService;
+        }
+        // GET: Home
+        public ViewResult Index()
+        {
+            var images = historicPhotoStoreService.GetImages();
+
+            return View(images.Select(x => x.ToString()));
         }
     }
 }

@@ -43,6 +43,7 @@
     <Compile Include="Abstract\DataStorage.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="DataStorage.cs" />
+    <Compile Include="DefaultHistoricPhotoStoreService.cs" />
     <Compile Include="HistoricPhotoStoreService.cs" />
     <Compile Include="NotImpmentedException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
