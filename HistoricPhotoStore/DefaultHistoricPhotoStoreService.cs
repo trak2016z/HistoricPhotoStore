@@ -15,6 +15,11 @@ namespace HistoricPhotoStore
             this.dataStorage = dataStorage;
         }
 
+        public byte[] GetImageDataForID(string v, Guid guid)
+        {
+            throw new NotImplementedException();
+        }
+
         public IEnumerable<Guid> GetImages()
         {
             return dataStorage.GetImages();

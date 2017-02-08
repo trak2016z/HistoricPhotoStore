@@ -6,5 +6,6 @@ namespace HistoricPhotoStore
     public interface HistoricPhotoStoreService
     {
         IEnumerable<Guid> GetImages();
+        byte[] GetImageDataForID(string v, Guid guid);
     }
 }

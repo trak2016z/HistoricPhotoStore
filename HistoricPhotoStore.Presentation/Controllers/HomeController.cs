@@ -1,4 +1,5 @@
 ﻿using HistoricPhotoStore;
+using HistoricPhotoStore.Presentation.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,10 +12,12 @@ namespace HistoricPhotoStore.Presentation.Controllers
     {
 
         private readonly HistoricPhotoStoreService historicPhotoStoreService;
+        private readonly PathHelper pathHelper;
 
-        public HomeController(HistoricPhotoStoreService historicPhotoStoreService)
+        public HomeController(HistoricPhotoStoreService historicPhotoStoreService, PathHelper pathHelper)
         {
             this.historicPhotoStoreService = historicPhotoStoreService;
+            this.pathHelper = pathHelper;
         }
         // GET: Home
         public ViewResult Index()
@@ -22,6 +25,14 @@ namespace HistoricPhotoStore.Presentation.Controllers
             var images = historicPhotoStoreService.GetImages();
 
             return View(images.Select(x => x.ToString()));
+        }
+
+        public FileContentResult Image(string guid)
+        {
+            var imageData = historicPhotoStoreService
+                .GetImageDataForID(pathHelper.RootDirectoryPath, new Guid(guid));
+
+            return File(imageData, "image/jpeg");
         }
     }
 }

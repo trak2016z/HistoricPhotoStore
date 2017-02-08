@@ -1,8 +1,14 @@
-﻿
+﻿@model IEnumerable<string>
 @{
     ViewBag.Title = "Magazyn Zdjęć Historycznych - Strona główna";
 }
 
-<h2>Magazyn Zdjęć Historycznych</h2>
-<p class="card-panel blue lighten-2 z-depth-2">Magazyn Zdjęć Historycznych</p>
-
+@foreach (var id in Model)
+{
+    <div class="row">
+        <div class="col s3 z-depth-1 hoverable" style="width:250px; padding:5px 0px;">
+            <img class="materialboxed" src="@Url.Action("Image", "Home", new { guid = id })" height="100" style="margin: 0 auto;" />
+        </div>
+        <h5 class="col s9">Opis wkrótce...</h5>
+    </div>
+}
