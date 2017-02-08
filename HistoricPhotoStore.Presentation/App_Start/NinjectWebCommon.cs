@@ -10,6 +10,12 @@ namespace HistoricPhotoStore.Presentation.App_Start
 
     using Ninject;
     using Ninject.Web.Common;
+    using HistoricPhotoStore.Presentation.Helpers;
+    using HistoricPhotoStore.Abstract;
+    using System.Configuration;
+    using System.Web.Mvc;
+    using System.Collections.Generic;
+    using HistoricPhotoStore.Presentation.Infrastructure;
 
     public static class NinjectWebCommon 
     {
@@ -61,6 +67,7 @@ namespace HistoricPhotoStore.Presentation.App_Start
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
+            DependencyResolver.SetResolver(new NinjectDependencyResolver(kernel));
         }        
     }
 }

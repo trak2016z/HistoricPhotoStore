@@ -33,15 +33,21 @@ namespace HistoricPhotoStore.Tests
             var guid1 = Guid.NewGuid();
             var guid2 = Guid.NewGuid();
             var guid3 = Guid.NewGuid();
+            var guid4 = Guid.NewGuid();
+            var guid5 = Guid.NewGuid();
+            var guid6 = Guid.NewGuid();
 
             dataStorage.Setup(x => x.GetImages())
-                .Returns(new List<Guid>() { guid1, guid2, guid3 });
+                .Returns(new List<Guid>() { guid1, guid2, guid3, guid4, guid5, guid6 });
 
             var images = service.GetImages().ToList();
 
             Assert.AreEqual(guid1, images[0]);
             Assert.AreEqual(guid2, images[1]);
             Assert.AreEqual(guid3, images[2]);
+            Assert.AreEqual(guid4, images[3]);
+            Assert.AreEqual(guid5, images[4]);
+            Assert.AreEqual(guid6, images[5]);
         }
 
         [TestMethod]
