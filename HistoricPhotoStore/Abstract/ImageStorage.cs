@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HistoricPhotoStore
+namespace HistoricPhotoStore.Abstract
 {
-    public interface DataStorage
+    public interface ImageStorage
     {
-        IEnumerable<Guid> GetImages();
+        byte[] GetDataForFile(string filePath);
     }
 }

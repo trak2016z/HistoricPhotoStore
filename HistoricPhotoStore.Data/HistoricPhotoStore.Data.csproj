@@ -52,6 +52,7 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Entities\Image.cs" />
     <Compile Include="EntityFrameworkDataStorage.cs" />
+    <Compile Include="FileBasedImageStorage.cs" />
     <Compile Include="HistoricPhotoStoreContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

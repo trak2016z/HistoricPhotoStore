@@ -16,6 +16,11 @@ namespace HistoricPhotoStore.Data
             context = new HistoricPhotoStoreContext(connectionString);
         }
 
+        public string GetImageExtensionForID(Guid guid)
+        {
+            return context.Images.First(x => x.ID == guid).Extension;
+        }
+
         public IEnumerable<Guid> GetImages()
         {
             return context.Images.Select(x => x.ID);
