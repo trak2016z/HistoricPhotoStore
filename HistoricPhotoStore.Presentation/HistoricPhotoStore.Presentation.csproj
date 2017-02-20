@@ -138,12 +138,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
-    <Content Include="Images\B8078AE5-82E7-4831-AF03-264BEAE3D075.jpg" />
-    <Content Include="Images\A4843E01-2BC9-45CE-978C-58C7689FA6E8.jpg" />
-    <Content Include="Images\92159CE3-8D1A-4DD6-AE39-8993599199D5.jpg" />
-    <Content Include="Images\372E7E76-6497-4761-96EF-ACF93C61F967.jpg" />
-    <Content Include="Images\8BD8935B-457D-4BB3-81AE-C0DC70A84E75.jpg" />
-    <Content Include="Images\97E4643E-56F6-4CC3-AA7D-D75433D2D2BD.jpg" />
+    <Content Include="Images\2bdc711f-ab3c-4103-baaa-92ad58bc906b.jpg" />
+    <Content Include="Images\065a32fe-19e7-47df-8fea-4dd936250eec.jpg" />
+    <Content Include="Images\925f7dbb-21f7-4a89-8e6a-3578e1630786.jpg" />
+    <Content Include="Images\3dd40656-0ee3-4841-b083-2a5bcee68d68.jpg" />
+    <Content Include="Images\32b1fc8c-4e2e-4b56-b9e8-2cfdb30d0548.jpg" />
+    <Content Include="Images\f76a1c27-eee6-4662-8e0b-424520a352f9.jpg" />
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Web.config">
